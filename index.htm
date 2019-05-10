@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NVL-JS-P10b</title>
+</head>
+<body>
+    <script>
+        var i = 0;
+        var random = [];
+        var pares = [];
+        var impares = [];
+
+        while(i < 50){
+            var num = Math.floor((Math.random() * 100) + 1);
+            random[i] = num;
+            i++;
+        }
+        array = random.length;
+
+        for (var i = 0; i < array; i++){
+            if (random[i]%2 == 0){
+                pares.push(random[i]);
+            } else {
+                impares.push(random[i]);
+            }
+        }
+        document.write(pares+"<br>");
+        document.write(impares+"<br>");
+    </script>
+</body>
+</html>
